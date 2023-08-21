@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    margin: 15px;
+    background: rgb(13, 3, 3);
+    font-family: 'Bitter', serif;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+}
+
+.card {
+    background: #000000d1;
+    padding: 60px;
+    border-radius: 30px;
+    color: rgb(170, 172, 167);
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    margin: 0.5em;
+    border-radius: 50%;
+    height: 2.5em;
+    width: 2.5em;
+    outline: none;
+    border: none;
+    background: #7c7c7c4b;
+    color: #bbbaba;
+    cursor: pointer;
+    transition: 0.12s ease-in-out;
+}
+
+button:hover {
+    background: #4e4d4d;
+}
+
+input.searchb {
+    border-radius: 14px;
+    padding: 9px;
+    outline: none;
+    border: none;
+    background: #7c7c7c4b;
+    color: #bbbaba;
+    font-size: 100%;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.description {
+    text-transform: capitalize;
+    margin-left: 10px;
+}
+
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+
+}
+
+.weather.loading:after {
+    visibility: visible;
+    content: "Weather is loading...";
+    color: #bbbaba;
+    position: absolute;
+    top: 0;
+}
